@@ -31,7 +31,7 @@ node {
     }
 
     stage('Test') {
-        withEnv(["CHROME_BIN=/usr/bin/chromium-browser"]) {
+        withEnv(["CHROME_BIN=C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"]) {
           sh 'npm run ng test --progress=false --watch false'
         }
         junit '**/test-results.xml'
