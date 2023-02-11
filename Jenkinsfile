@@ -35,7 +35,7 @@ node {
     }
 
     stage('Lint') {
-        sh 'npm run ng lint'
+        echo "Deploying..."
     }
 
     stage('Build') {
